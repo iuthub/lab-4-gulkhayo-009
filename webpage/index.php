@@ -43,6 +43,7 @@
                 <?php
                 $files = glob("songs/*.txt");
                foreach ($files as $file) {
+                $filename = basename($file);?>
                 <li class="playlistitem">
                     <p><a href="<?= $file ?>"><?= $filename ?></a></p>
                     <?php } ?>
@@ -51,3 +52,4 @@
 		</div>
 	</body>
 </html>
+
